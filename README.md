@@ -35,3 +35,17 @@ Then I ran sql queries on the SQLite database for each song to retrieve the pres
 I do not know how the DJ software updates its tracks, so to prevent any further unintended damage, I copied the backup preserved data from the SQL query and updated the fields using the DJ software user interface for each track.
 
 ![6](https://github.com/user-attachments/assets/1e7243be-ab23-46eb-b130-78c4a1768665)
+
+
+
+The Python script that I’ve written(musicFiles_sqlite_demo.py) to resolve my issue and the backup database(database.xml) from the DJ Software can be pulled from this Github repository.
+
+If on MacOS terminal, you can clone the repo to your machine with this command: % git clone https://github.com/naturaledward/PythonDemo.git
+
+Here are some notes on the Python program(musicFiles_sqlite_demo.py):
+1. copy of DJ software backup database, database.xml, located in the same directory as this Python program
+2. parses the xml and creates a SQLite database, musicFiles.sqlite, in same directory
+3. the parsed data from xml is transferred to the SQLite database
+4. a query is run on an affected song to retrieve preserved fields prior to track corruption after DJ software update
+5. enter 'guns n r' for artist and 'sweet' for track, 'q' to quit program
+6. SQLite database, musicFiles.sqlite, is overwritten every time this Python program runs
