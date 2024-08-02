@@ -40,7 +40,9 @@ I do not know how the DJ software updates its tracks, so to prevent any further 
 
 The Python script that I’ve written(musicFiles_sqlite_demo.py) to resolve my issue and the backup database(database.xml) from the DJ Software can be pulled from this Github repository.
 
-If on MacOS terminal, you can clone the repo to your machine with this command: % git clone https://github.com/naturaledward/PythonDemo.git
+If on MacOS terminal, you can clone the repo to your machine with this command: 
+
+% git clone https://github.com/naturaledward/PythonDemo.git
 
 Here are some notes on the Python program(musicFiles_sqlite_demo.py):
 1. copy of DJ software backup database, database.xml, located in the same directory as this Python program
